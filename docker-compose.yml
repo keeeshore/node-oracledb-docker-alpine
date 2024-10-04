@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    image: oracle-node-alpine
+    # command: tail -F /dev/null/
+    # tty: true 
+    build: 
+      dockerfile: Dockerfile
+      context: .
+    container_name: 'connector'
+    network_mode: "host"

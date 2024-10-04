@@ -1,0 +1,19 @@
+(node:3876) UnhandledPromiseRejectionWarning: Error: DPI-1047: Cannot locate a 64-bit Oracle Client library: "The specified module could not be found". See https://node-oracledb.readthedocs.io/en/latest/user_guide/installation.html for help
+Node-oracledb installation instructions: https://node-oracledb.readthedocs.io/en/latest/user_guide/installation.html
+You must have Windows 64-bit Oracle Client libraries in your PATH environment variable.
+If you do not have Oracle Database on this computer, then install the Instant Client Basic or Basic Light package from
+https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html
+A Microsoft Visual Studio Redistributable suitable for your Oracle client library version must be available.
+
+    at Object.initOracleClient (C:\workspace\oracle-node-alpine-docker\node_modules\oracledb\lib\oracledb.js:710:20)
+    at run (C:\workspace\oracle-node-alpine-docker\index.js:20:14)
+    at Object.<anonymous> (C:\workspace\oracle-node-alpine-docker\index.js:39:1)
+    at Module._compile (internal/modules/cjs/loader.js:1114:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+    at Module.load (internal/modules/cjs/loader.js:979:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:819:12)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)
+    at internal/main/run_main_module.js:17:47
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3876) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:3876) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.

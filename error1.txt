@@ -1,0 +1,21 @@
+ODPI [00018] 2024-10-04 12:41:24.287: ODPI-C 5.3.0b1
+ODPI [00018] 2024-10-04 12:41:24.287: debugging messages initialized at level 64
+ODPI [00018] 2024-10-04 12:41:24.287: Context Parameters:
+ODPI [00018] 2024-10-04 12:41:24.287: Environment Variables:
+ODPI [00018] 2024-10-04 12:41:24.287:     LD_LIBRARY_PATH => "/usr/lib/instantclient"
+ODPI [00018] 2024-10-04 12:41:24.287: check module directory
+ODPI [00018] 2024-10-04 12:41:24.287: module name is /src/node_modules/oracledb/build/Release/oracledb-6.6.0-linux-x64.node
+ODPI [00018] 2024-10-04 12:41:24.287: load in dir /src/node_modules/oracledb/build/Release
+ODPI [00018] 2024-10-04 12:41:24.287: load with name /src/node_modules/oracledb/build/Release/libclntsh.so
+ODPI [00018] 2024-10-04 12:41:24.287: load by OS failure: Error loading shared library /src/node_modules/oracledb/build/Release/libclntsh.so: No such file or directory
+ODPI [00018] 2024-10-04 12:41:24.287: load with OS search heuristics
+ODPI [00018] 2024-10-04 12:41:24.287: load with name libclntsh.so
+ODPI [00018] 2024-10-04 12:41:24.308: load by OS successful
+ODPI [00018] 2024-10-04 12:41:24.308: validating loaded library
+Err ::::  Error: ORA-28041: authentication protocol internal error
+Help: https://docs.oracle.com/error-help/db/ora-28041/
+    at async run (/src/index.js:26:28) {
+  errorNum: 28041,
+  offset: 0,
+  code: 'ORA-28041'
+}
