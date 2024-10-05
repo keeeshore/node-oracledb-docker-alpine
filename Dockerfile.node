@@ -1,0 +1,13 @@
+FROM node:18
+
+WORKDIR /tmp
+RUN apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade && apt-get install -y alien libaio1
+RUN wget https://download.oracle.com/otn_software/linux/instantclient/2350000/oracle-instantclient-basiclite-23.5.0.24.07-1.el9.x86_64.rpm
+RUN alien -i --scripts oracle-instantclient*.rpm
+RUN rm -f oracle-instantclient19.3*.rpm && apt-get -y autoremove && apt-get -y clean
+
+WORKDIR /src
+COPY . .
+RUN npm i
+EXPOSE 3002
+CMD ["npm", "start" ]
